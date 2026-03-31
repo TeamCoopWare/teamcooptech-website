@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(perl -i -pe 's/Digital Marketing/Online Marketing and ADs placements/g; s/digital marketing/online marketing and ADs placements/g' index.html about.html services.html contact.html services/digital-marketing.html services/payment-systems.html services/website-development.html services/odoo-erp.html services/automation.html services/custom-apps.html services/seo-aso.html services/power-platform.html)",
+      "Bash(grep -o \"power-platform\\\\.html[^>]*>[^<]*</a>.\\\\{0,30\\\\}\" index.html)",
+      "Bash(perl -i -pe 's/Communication Automation/Automated Text Messaging and Custom Bots/g' index.html about.html services.html contact.html services/automation.html services/custom-apps.html services/seo-aso.html services/digital-marketing.html services/power-platform.html services/payment-systems.html services/video-editing.html)",
+      "Bash(perl -i -pe 's/SEO &amp; ASO\\(?! \\\\\\(Get found online\\\\\\)\\)/SEO \\\\&amp; ASO \\(Get found online\\)/g; s/SEO & ASO\\(?! \\\\\\(Get found online\\\\\\)\\)/SEO \\\\& ASO \\(Get found online\\)/g' index.html about.html services.html contact.html services/automation.html services/custom-apps.html services/seo-aso.html services/digital-marketing.html services/power-platform.html services/payment-systems.html services/video-editing.html)",
+      "Bash(perl -i -pe 's/SEO &amp; ASO/SEO \\\\&amp; ASO \\(Get found online\\)/g; s/SEO & ASO/SEO \\\\& ASO \\(Get found online\\)/g' index.html about.html services.html contact.html services/automation.html services/custom-apps.html services/seo-aso.html services/digital-marketing.html services/power-platform.html services/payment-systems.html services/video-editing.html)",
+      "Bash(perl -i -pe 's/Payment Systems/Point of Sales Systems/g; s/payment systems/point of sales systems/g' index.html about.html services.html contact.html services/automation.html services/custom-apps.html services/seo-aso.html services/digital-marketing.html services/power-platform.html services/payment-systems.html services/video-editing.html)",
+      "Bash(perl -i -pe ':*)"
+    ]
+  }
+}
