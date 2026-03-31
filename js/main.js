@@ -147,6 +147,23 @@ if (mobileServicesPanel) {
   mobileServicesPanel.style.transition = 'max-height 0.3s ease';
 }
 
+// ─── Equal height service cards ─────────────────────
+function equaliseServiceCards() {
+  const grids = document.querySelectorAll('.services-grid');
+  grids.forEach(grid => {
+    const cards = grid.querySelectorAll('.service-card');
+    if (!cards.length) return;
+    // Reset first so we measure natural height
+    cards.forEach(c => { c.style.minHeight = ''; });
+    if (window.innerWidth < 1024) return;
+    let max = 0;
+    cards.forEach(c => { if (c.offsetHeight > max) max = c.offsetHeight; });
+    cards.forEach(c => { c.style.minHeight = max + 'px'; });
+  });
+}
+window.addEventListener('load', equaliseServiceCards);
+window.addEventListener('resize', equaliseServiceCards);
+
 /* Spin animation for submit button */
 const style = document.createElement('style');
 style.textContent = `.spin { animation: spin 0.8s linear infinite; } @keyframes spin { to { transform: rotate(360deg); } }`;
