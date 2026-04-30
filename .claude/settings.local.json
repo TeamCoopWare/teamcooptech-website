@@ -7,7 +7,10 @@
       "Bash(perl -i -pe 's/SEO &amp; ASO\\(?! \\\\\\(Get found online\\\\\\)\\)/SEO \\\\&amp; ASO \\(Get found online\\)/g; s/SEO & ASO\\(?! \\\\\\(Get found online\\\\\\)\\)/SEO \\\\& ASO \\(Get found online\\)/g' index.html about.html services.html contact.html services/automation.html services/custom-apps.html services/seo-aso.html services/digital-marketing.html services/power-platform.html services/payment-systems.html services/video-editing.html)",
       "Bash(perl -i -pe 's/SEO &amp; ASO/SEO \\\\&amp; ASO \\(Get found online\\)/g; s/SEO & ASO/SEO \\\\& ASO \\(Get found online\\)/g' index.html about.html services.html contact.html services/automation.html services/custom-apps.html services/seo-aso.html services/digital-marketing.html services/power-platform.html services/payment-systems.html services/video-editing.html)",
       "Bash(perl -i -pe 's/Payment Systems/Point of Sales Systems/g; s/payment systems/point of sales systems/g' index.html about.html services.html contact.html services/automation.html services/custom-apps.html services/seo-aso.html services/digital-marketing.html services/power-platform.html services/payment-systems.html services/video-editing.html)",
-      "Bash(perl -i -pe ':*)"
+      "Bash(perl -i -pe ':*)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }
